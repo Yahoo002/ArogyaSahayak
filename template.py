@@ -18,7 +18,7 @@ list_of_files = [
 
 
 for filepath in list_of_files:
-    filepath = Path(filepath)
+    filepath = Path(filepath) #this makes the application production ready by changing the file path from or to \ and / depending on windows or mac
     filedir, filename = os.path.split(filepath)
 
 
@@ -34,3 +34,4 @@ for filepath in list_of_files:
 
     else:
         logging.info(f"{filename} is already exists")
+        
